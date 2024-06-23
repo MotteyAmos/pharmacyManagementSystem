@@ -1,0 +1,20 @@
+
+loginBtn{
+-fx-background-color: #3b82f6;
+    -fx-font-size: 30;
+}
+#logBtn{
+    -fx-background-color:#3b82f6; ;
+}
+
+#logBtn:hover{
+    -fx-background-color:#60a5fa;
+    -fx-transition: opacity 0.5s ease-in-out;
+}
+
+/*Button{*/
+/*    -fx-background-color: #3b82f6;*/
+/*}*/
+/*#loginContainer{*/
+/*    -fx-background-color: green;*/
+/*}*/

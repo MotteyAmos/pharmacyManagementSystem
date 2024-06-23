@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="914.0" style="-fx-border-color: none;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.AddProductController">
+   <content>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="938.0" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="64.0" prefWidth="901.0" style="-fx-spacing: 20;">
+                     <children>
+                        <VBox prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Generic Name" />
+                              <TextField fx:id="genericName" prefHeight="56.0" prefWidth="451.0" promptText="eg. Paracetamol" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Name By Brand" />
+                              <TextField fx:id="nameByBrand" prefHeight="56.0" prefWidth="451.0" promptText="Nyal" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="93.0" prefHeight="64.0" prefWidth="900.0" style="-fx-spacing: 20;">
+                     <children>
+                        <VBox prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Unit Price" />
+                              <TextField fx:id="unitPrice" prefHeight="56.0" prefWidth="451.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Quantity" />
+                              <TextField fx:id="quantity" prefHeight="56.0" prefWidth="451.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="166.0" prefHeight="64.0" prefWidth="900.0" style="-fx-spacing: 20;">
+                     <children>
+                        <VBox prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="DosageForm" />
+                              <TextField fx:id="dosageForm" prefHeight="56.0" prefWidth="451.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_LEFT">
+                           <children>
+                              <Label text="medicine Strenght" />
+                              <TextField fx:id="medicineStrenght" prefHeight="40.0" prefWidth="195.0" promptText=" 500ml" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="64.0" prefWidth="176.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Expiring Date" />
+                              <DatePicker fx:id="expireDate" prefHeight="25.0" prefWidth="155.0" promptText="Enter expiring Date" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="243.0" prefHeight="75.0" prefWidth="899.0" style="-fx-spacing: 20;">
+                     <children>
+                        <VBox prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Location" />
+                              <TextField fx:id="locationName" layoutX="10.0" layoutY="40.0" prefHeight="56.0" prefWidth="451.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="93.0" prefWidth="368.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Manufacture" />
+                              <TextField fx:id="manufacture" prefHeight="56.0" prefWidth="451.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="398.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="medicineDescription" prefHeight="68.0" prefWidth="756.0" promptText="medicine description" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="addProduct" layoutX="328.0" layoutY="1099.0" mnemonicParsing="false" onAction="#onAddDrug" prefHeight="39.0" prefWidth="260.0" text="Add Product" />
+                  <HBox alignment="CENTER_LEFT" layoutY="324.0" prefHeight="63.0" prefWidth="901.0" style="-fx-spacing: 20;">
+                     <children>
+                        <VBox prefHeight="56.0" prefWidth="368.0" style="-fx-spacing: 5;">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="133.0" text="Supplier Name" />
+                              <TextField fx:id="supplierName" layoutX="10.0" layoutY="40.0" prefHeight="56.0" prefWidth="451.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="366.0" style="-fx-spacing: 5;">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="265.0" text="Supplier Email" />
+                              <TextField fx:id="supplierEmail" prefHeight="56.0" prefWidth="451.0" promptText="Enter supplier email" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="366.0" text="Add New Medicine" />
+                  <HBox layoutY="496.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="storageInstruction" prefHeight="68.0" prefWidth="756.0" promptText="Storage Instruction" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="1.0" layoutY="589.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="prescriptionRequirement" prefHeight="68.0" prefWidth="756.0" promptText="Enter Prescription Requirement" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="1.0" layoutY="684.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="interation" prefHeight="68.0" prefWidth="756.0" promptText="interaction: ie. how how different drugs interact with each other, as well as with foods, beverages, or medical conditions." />
+                     </children>
+                  </HBox>
+                  <HBox layoutY="779.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="contrainDictions" prefHeight="68.0" prefWidth="756.0" promptText="Enter the situation condition where the medine should not be used" />
+                     </children>
+                  </HBox>
+                  <HBox layoutY="878.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="sideEffect" prefHeight="68.0" prefWidth="756.0" promptText="Enter the Side Effect" />
+                     </children>
+                  </HBox>
+                  <HBox layoutY="969.0" prefHeight="80.0" prefWidth="900.0">
+                     <children>
+                        <TextArea fx:id="catgory" prefHeight="68.0" prefWidth="756.0" promptText="Enter category eg. Antibiotics, Painkiller, Antipyretics, Antihistamines,Antibiotics, Cardiovascular Drugs" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainWorkingArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="css/application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.Login">
+   <children>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="347.0" prefWidth="448.0" style="-fx-spacing: 30; -fx-background-color: #f1f5f9;">
+         <children>
+            <StackPane alignment="CENTER_LEFT" prefHeight="347.0" prefWidth="466.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="325.0" prefWidth="466.0" style="-fx-spacing: 10;">
+                     <children>
+                        <Label fx:id="header" alignment="CENTER" prefHeight="36.0" prefWidth="466.0" text="You Are Welcome">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font></Label>
+                        <VBox prefHeight="108.0" prefWidth="466.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="153.0" text="Email" />
+                              <TextField fx:id="emailI" prefHeight="52.0" prefWidth="454.0" promptText="Enter your email" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="88.0" prefWidth="466.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="153.0" text="Password" />
+                              <TextField fx:id="password" prefHeight="52.0" prefWidth="454.0" promptText="Enter your password" />
+                           </children>
+                        </VBox>
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#onLgonBtn"  prefHeight="45.0" prefWidth="120.0"  text="Login"  textFill="WHITE" id="logBtn">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </StackPane.margin>
+      </HBox>
+   </children>
+</StackPane>
