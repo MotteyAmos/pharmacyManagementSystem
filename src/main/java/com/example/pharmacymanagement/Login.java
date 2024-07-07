@@ -37,7 +37,7 @@ public class Login {
 
         // validate the text fields
         if (emailValue.isEmpty()){
-            alertUser(emailI, "Email");
+            alertUser(emailI, "Email is required");
             return;
         }else if (!Validator.emailValidator(emailValue)){
             alertUser(emailI, "Provide a valid email and email");
@@ -61,7 +61,7 @@ public class Login {
             });
 
             userExit.thenAccept((s)->{
-               System.out.println("found iii");
+               //System.out.println("found iii");
                try{
                    if (!userExit.get().next()){
 
@@ -91,7 +91,7 @@ public class Login {
                        userInfo.setUserName(userExit.get().getString("name"));
 
 
-                       System.out.println(userInfo.getUserEmail() + userInfo.getUserName());
+                       //System.out.println(userInfo.getUserEmail() + userInfo.getUserName());
 
                        Platform.runLater(()->{
                            /// navigate to main dashboard

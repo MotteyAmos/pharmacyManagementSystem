@@ -222,7 +222,7 @@ public class SaleBoard implements Initializable {
             CompletableFuture<ResultSet> medicineDescriptionResults = CompletableFuture.supplyAsync(()->{
                 try{
                     Connection connectDB = DBConnection.getConnection();
-                    PreparedStatement preparedStatement2 = connectDB.prepareStatement("select * from medicinedescriptions where nameByBrand=? AND genericName=?");
+                    PreparedStatement preparedStatement2 = connectDB.prepareStatement("SELECT * FROM medicinedescriptions WHERE nameByBrand = ? AND genericName =? LIMIT 1");
 
                     preparedStatement2.setString(1, nameByBrandValue);
                     preparedStatement2.setString(2, genericNameValue);
@@ -237,11 +237,14 @@ public class SaleBoard implements Initializable {
             ResultSet mdDescriptionRts = medicineDescriptionResults.get();
 
             if (mdDescriptionRts.next()){
-//                System.out.println(  res.getString("quantity"),);
+                System.out.println("query working");
+                System.out.println( "query" + mdDescriptionRts.getString("genericName"));
+                System.out.println( "query" + mdDescriptionRts.getString("nameByBrand"));
+
                 Platform.runLater(()->{
 
                     try {
-                        genericName.setText(mdDescriptionRts.getString("genericName"));
+                        genericNameDoc.setText(mdDescriptionRts.getString("genericName"));
                         presriptionRequirementDoc.setText(mdDescriptionRts.getString("prescriptionRequirement"));
                         descriptionDoc.setText(mdDescriptionRts.getString("description"));
                         storageInstructionDoc.setText(mdDescriptionRts.getString("storageInstruction"));

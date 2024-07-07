@@ -95,6 +95,15 @@ public class AddPhamarcist  {
         }catch (Exception e){
                     e.printStackTrace();
         }
+
+        name.setText("");
+        email.setText("");
+        password.setText("");
+        licenceNumber.setText("");
+        address.setText("");
+        role.setText("");
+
+
     }
 
     public void alertUser(TextField textfield,String textType){

@@ -21,9 +21,9 @@
 <?import javafx.scene.text.Font?>
 
 
-<StackPane prefWidth="1500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.SaleBoard">
+<AnchorPane prefHeight="760.0" prefWidth="1380" xmlns="http://javafx.com/javafx/22" stylesheets="@css/displaySceneBoard.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.SaleBoard">
    <children>
-      <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="1075.0" prefWidth="1204.0">
+      <ScrollPane maxHeight="1.7976931348623157E308"  maxWidth="-Infinity" prefHeight="760.0" prefWidth="1380">
          <content>
             <BorderPane>
                <center>
@@ -31,7 +31,7 @@
                      <children>
                         <VBox alignment="TOP_CENTER" layoutX="10.0" spacing="40.0">
                            <children>
-                              <HBox alignment="CENTER" prefHeight="468.0" prefWidth="1174.0" style="-fx-spacing: 20;">
+                              <HBox alignment="CENTER" prefHeight="468.0" prefWidth="1350.0" style="-fx-spacing: 20;">
                                  <children>
                                     <VBox alignment="CENTER_LEFT" prefHeight="315.0" prefWidth="441.0">
                                        <children>
@@ -59,13 +59,13 @@
                                                 <TextField fx:id="customerName" prefHeight="41.0" prefWidth="411.0" style="-fx-background-radius: 5;" />
                                              </children>
                                           </VBox>
-                                          <Button fx:id="buyButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onBuy" prefHeight="53.0" prefWidth="151.0" text="Buy " />
+                                          <Button fx:id="buyButton" alignment="CENTER" styleClass="btn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onBuy" prefHeight="53.0" prefWidth="151.0" text="Buy " />
                                        </children>
                                     </VBox>
-                                    <VBox prefHeight="468.0" prefWidth="708.0">
+                                    <VBox prefHeight="468.0" prefWidth="980.0" >
                                        <children>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="478.0" text="Recent Sales" />
-                                          <TableView fx:id="recentSaleTable" prefHeight="432.0" prefWidth="530.0">
+                                          <Label alignment="CENTER_LEFT" contentDisplay="CENTER" prefHeight="42.0" prefWidth="478.0" text="Recent Sales" />
+                                          <TableView fx:id="recentSaleTable" prefHeight="432.0" prefWidth="830.0">
                                             <columns>
                                               <TableColumn fx:id="tableMedicineName" prefWidth="75.0" text="Generic Name" />
                                               <TableColumn fx:id="tableMedicineNameByBrand" prefWidth="75.0" text="Named By Brand" />
@@ -294,11 +294,9 @@
                      </BorderPane.margin>
                   </HBox>
                </top>
-               <cursor>
-                  <Cursor fx:constant="S_RESIZE" />
-               </cursor>
+
             </BorderPane>
          </content>
       </ScrollPane>
    </children>
-</StackPane>
+</AnchorPane>

@@ -80,6 +80,7 @@ public class ListOfPurchases implements Initializable {
 
             ResultSet results = purchasesResults.get();
             while (results.next()){
+
                 purchaseList.add(
                         new Purchases(results.getString("quantity"),
                                 results.getString("totalPrice"),
@@ -120,7 +121,7 @@ public class ListOfPurchases implements Initializable {
             CompletableFuture<ResultSet> purchasesResults = CompletableFuture.supplyAsync(()->{
                 try{
                     Connection connectDB = DBConnection.getConnection();
-                    PreparedStatement preparedStatement = connectDB.prepareStatement("SELECT * FROM purchases where (medicineGenericName=? OR medicineNameByBrand=? OR timeStamp=? ) AND customerName=?  ");
+                    PreparedStatement preparedStatement = connectDB.prepareStatement("SELECT * FROM purchases where medicineGenericName=? OR medicineNameByBrand=? OR timeStamp=? OR customerName=?  ");
                     preparedStatement.setString(1, filterMedicineGenericName.getText());
                     preparedStatement.setString(2, filterMedicineNameByBrand.getText());
                     preparedStatement.setString(4, filterCustomerName.getText());
@@ -134,7 +135,7 @@ public class ListOfPurchases implements Initializable {
 
             ResultSet results = purchasesResults.get();
             while (results.next()){
-                System.out.println( results.getString("totalPrice"));
+
                 purchaseList.add(
                         new Purchases(results.getString("quantity"),
                                 results.getString("totalPrice"),

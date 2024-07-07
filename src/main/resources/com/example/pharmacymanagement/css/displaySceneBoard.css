@@ -1,0 +1,42 @@
+ScrollPane{
+   // -fx-pref-width: ;
+}
+
+.btn{
+   -fx-background-color: #1C2D3F;
+   -fx-text-fill: white;
+   -fx-font-size: 15;
+   -fx-cursor: hand;
+}
+
+
+
+.table-view .column-header{
+   -fx-background-color: #1C2D3F;
+}
+
+.table-view .column-header{
+
+}
+
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-padding: 15 0 15 0;
+
+}
+
+.topPadding{
+   -fx-padding: 35 0 0 0;
+
+}
+
+.remove-Border{
+   -fx-background-color: transparent;
+   -fx-border-color: transparent;
+   -fx-padding: 0;
+
+}
+
+.remove-Border .viewport {
+   -fx-background-color: transparent;
+}

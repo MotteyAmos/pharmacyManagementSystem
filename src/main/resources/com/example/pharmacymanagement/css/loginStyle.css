@@ -1,14 +1,14 @@
 
 loginBtn{
--fx-background-color: #3b82f6;
+-fx-background-color: #1C2D3F;
     -fx-font-size: 30;
 }
 #logBtn{
-    -fx-background-color:#3b82f6; ;
+    -fx-background-color: #1C2D3F; ;
 }
 
 #logBtn:hover{
-    -fx-background-color:#60a5fa;
+    -fx-background-color: rgba(28, 45, 63, 0.8);;
     -fx-transition: opacity 0.5s ease-in-out;
 }
 

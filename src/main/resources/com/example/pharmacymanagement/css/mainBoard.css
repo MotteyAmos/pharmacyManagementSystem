@@ -1,5 +1,64 @@
-
-
 BorderPane{
-    -fx-background-color: green;
+    -fx-pref-height: 100%;
+
+}
+
+.logo-box{
+-fx-spacing: 2;
+    -fx-padding: 0 0 0 25;
+}
+
+.logo-root-box{
+    -fx-padding: 0 0 40 0;
+}
+
+.logo{
+    -fx-font-size: 25;
+    /*-fx-fill: white;*/
+    -fx-font-weight: 900;
+    /*-fx-text-alignment: center;*/
+-fx-text-fill: white;
+}
+
+#leftPane{
+    -fx-background-color: #1C2D3F;
+    -fx-spacing: 5;
+    -fx-padding: 50 0 0 0;
+    -fx-pref-height: 100%;
+}
+
+#rightPane{
+    -fx-pref-height: 100%;
+}
+.nav-button{
+    -fx-background-color: #1C2D3F;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-pref-height: 50;
+    -fx-cursor: hand;
+    -fx-alignment:center-left;
+    -fx-padding: 0 0 0 25;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.nav-button:focused{
+    -fx-background-color:#F8F7FF ;
+    -fx-text-fill:#1C2D3F;
+}
+
+.logout{
+    -fx-padding: 100 0 0 25;
+    -fx-alignment:center-left;
+    -fx-background-color: #1C2D3F;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-spacing: 5;
+    -fx-pref-height: 50;
+}
+
+#displayBoard{
+
+        -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
 }

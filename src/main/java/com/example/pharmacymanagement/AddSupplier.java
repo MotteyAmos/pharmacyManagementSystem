@@ -41,7 +41,11 @@ public class AddSupplier {
     public TextArea website;
 
     @FXML
+    public Button button;
+
+    @FXML
     void addSupplier(ActionEvent actionEvent) {
+        button.setText("Add...");
         String nameValue = name.getText();
         String phoneNumberValue = phoneNumber.getText();
         String emailValue = email.getText();
@@ -117,9 +121,24 @@ public class AddSupplier {
             connectDB.close();
             //write the code to requery all suppliers
             // wrtiet the code to clear the textfield values
+
+
         }catch (Exception e){
                     e.printStackTrace();
         }
+
+        button.setText("Add Supplier");
+        name.setText("");
+        phoneNumber.setText("");
+        email.setText("");
+        address.setText("");
+        region.setText("");
+        city.setText("");
+        postalCode.setText("");
+        country.setText("");
+        supplyCategory.setText("");
+        paymentTerm.setText("");
+        website.setText("");
 
 
     }

@@ -10,76 +10,67 @@
 <?import javafx.scene.text.Font?>
 
 
-<StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="973.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.AddPhamarcist">
-   <children>
-      <AnchorPane prefHeight="421.0" prefWidth="842.0" StackPane.alignment="TOP_CENTER">
+<?import javafx.scene.control.ScrollPane?>
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefWidth="1380" styleClass="topPadding" stylesheets="@css/displaySceneBoard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.AddPhamarcist">
+   <ScrollPane AnchorPane.topAnchor="0.0" prefWidth="1380" fitToWidth="false"  styleClass="remove-Border" prefHeight="710">
+      <VBox prefWidth="1350">
          <children>
-            <HBox alignment="CENTER_LEFT" layoutX="1.0" layoutY="47.0" prefHeight="74.0" prefWidth="855.0" style="-fx-spacing: 50;">
-               <children>
-                  <VBox prefHeight="74.0" prefWidth="640.0">
+
+            <HBox alignment="CENTER_LEFT"   >
+                  <VBox prefHeight="100.0"  prefWidth="800.0">
+                        <Label  text="Full Name" />
+                        <TextField prefHeight="40.0" prefWidth="537.0" fx:id="name"/>
+                  </VBox>
+            </HBox>
+            <HBox alignment="CENTER_LEFT"    style="-fx-spacing: 60;">
+                  <VBox prefHeight="100.0"  prefWidth="400.0">
                      <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Full Name" />
-                        <TextField prefHeight="40.0" prefWidth="537.0" />
+                        <Label  text="Role" />
+                        <TextField prefHeight="50" prefWidth="80.0" fx:id="role" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0"  prefWidth="400.0">
+                     <children>
+                        <Label  text="Adress" />
+                        <TextField prefHeight="50" prefWidth="80.0" fx:id="address" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0"  prefWidth="400.0">
+                     <children>
+                        <Label text="License Number" />
+                        <TextField prefHeight="50" prefWidth="80.0" fx:id="licenceNumber" />
+                     </children>
+                  </VBox>
+            </HBox>
+
+
+            <HBox alignment="CENTER_LEFT"    style="-fx-spacing: 60;">
+               <children>
+                  <VBox prefHeight="100.0"  prefWidth="400.0">
+                     <children>
+                        <Label  text="Password" />
+                        <TextField  prefHeight="50" prefWidth="80.0" fx:id="password" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0"  prefWidth="400.0">
+                     <children>
+                        <Label text="Email" />
+                        <TextField prefHeight="50" prefWidth="80.0" fx:id="email"/>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <Label  text="Phone Number" />
+                        <TextField prefHeight="50" prefWidth="80.0" fx:id="phoneNumber" />
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutX="1.0" layoutY="195.0" prefHeight="74.0" prefWidth="855.0" style="-fx-spacing: 30;">
+
+
+            <HBox prefHeight="100.0" prefWidth="400.0" alignment="CENTER_RIGHT" style="-fx-padding: 0 30 0 0">
                <children>
-                  <VBox prefHeight="74.0" prefWidth="640.0">
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Role" />
-                        <TextField prefHeight="40.0" prefWidth="537.0" />
-                     </children>
-                  </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="74.0" prefWidth="640.0">
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Adress" />
-                        <TextField prefHeight="40.0" prefWidth="537.0" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" layoutX="1.0" layoutY="275.0" prefHeight="74.0" prefWidth="855.0" style="-fx-spacing: 30;">
-               <children>
-                  <VBox prefHeight="74.0" prefWidth="640.0">
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="License Number" />
-                        <TextField prefHeight="40.0" prefWidth="440.0" />
-                     </children>
-                  </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="74.0" prefWidth="640.0">
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Password" />
-                        <TextField prefHeight="40.0" prefWidth="306.0" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-            <Label alignment="CENTER" layoutX="-1.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" prefHeight="45.0" prefWidth="855.0" text="Add Pharmacist">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <HBox alignment="CENTER" layoutX="2.0" layoutY="121.0" prefHeight="74.0" prefWidth="855.0" style="-fx-spacing: 30;">
-               <children>
-                  <VBox prefHeight="74.0" prefWidth="640.0">
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Email" />
-                        <TextField prefHeight="40.0" prefWidth="537.0" />
-                     </children>
-                  </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="74.0" prefWidth="640.0">
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Phone Number" />
-                        <TextField prefHeight="40.0" prefWidth="537.0" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" layoutX="-1.0" layoutY="361.0" prefHeight="74.0" prefWidth="788.0">
-               <children>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Add Pharmacist">
+                  <Button mnemonicParsing="false" styleClass="btn" prefHeight="52.0" prefWidth="217.0" text="Add Pharmacist" onAction="#addPhamarcist">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -87,6 +78,6 @@
                </children>
             </HBox>
          </children>
-      </AnchorPane>
-   </children>
-</StackPane>
+      </VBox>
+   </ScrollPane>
+</AnchorPane>

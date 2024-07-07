@@ -12,157 +12,155 @@
 <?import javafx.scene.text.Font?>
 
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.AddSupplier">
-   <content>
-      <AnchorPane prefHeight="745.0" prefWidth="878.0">
+<?import javafx.scene.layout.Pane?>
+<AnchorPane maxHeight="-Infinity"   maxWidth="-Infinity" minHeight="-Infinity" prefWidth="1380" styleClass="topPadding"  stylesheets="@css/displaySceneBoard.css" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagement.AddSupplier">
+   <ScrollPane AnchorPane.topAnchor="0.0" prefWidth="1380" fitToWidth="false"  styleClass="remove-Border">
+      <VBox  prefWidth="1350" >
          <children>
-            <HBox alignment="CENTER" layoutY="51.0" prefHeight="73.0" prefWidth="880.0" style="-fx-spacing: 60;">
+            <HBox alignment="CENTER_LEFT"    style="-fx-spacing: 60;">
                <children>
-                  <VBox prefHeight="100.0" prefWidth="359.0">
+                  <VBox prefHeight="100.0" styleClass="text-field" prefWidth="400.0" >
                      <children>
-                        <Label prefHeight="30.0" prefWidth="70.0" text="Name">
+                        <Label  text="Name" >
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
+                        <TextField  fx:id="name" prefHeight="50" prefWidth="80.0" />
                      </children>
                   </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="359.0">
+                  <VBox  prefHeight="100.0" prefWidth="400.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="362.0" text="Phone Number">
+                        <Label  text="Phone Number">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
+                        <TextField fx:id="phoneNumber" prefHeight="50" prefWidth="80.0"/>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <Label  text="Email">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email" prefHeight="50" prefWidth="80.0"/>
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="1.0" prefHeight="30.0" prefWidth="880.0" text="Add Supplier">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <HBox alignment="CENTER" layoutY="124.0" prefHeight="73.0" prefWidth="880.0" style="-fx-spacing: 60;">
+
+            <HBox alignment="CENTER_LEFT"  style="-fx-spacing: 60;">
                <children>
-                  <VBox prefHeight="100.0" prefWidth="359.0">
+
+                  <VBox  prefHeight="100.0" prefWidth="400.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="70.0" text="Email">
+                        <Label  text="Address">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
+                        <TextField fx:id="address" prefHeight="50" prefWidth="80.0"/>
                      </children>
                   </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="359.0">
+                  <VBox prefHeight="100.0" prefWidth="400.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="362.0" text="Address">
+                        <Label  text="Region">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
+                        <TextField fx:id="region" prefHeight="50" prefWidth="80.0" />
+                     </children>
+                  </VBox>
+                  <VBox  prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <Label  text="City">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="city" prefHeight="50" prefWidth="80.0"/>
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutY="186.0" prefHeight="73.0" prefWidth="880.0" style="-fx-spacing: 60;">
+
+            <HBox alignment="CENTER_LEFT" style="-fx-spacing: 60;">
                <children>
-                  <VBox prefHeight="100.0" prefWidth="359.0">
+                  <VBox prefHeight="100.0" prefWidth="400.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="70.0" text="Region">
+                        <Label  text="Postal Code">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
+                        <TextField fx:id="postalCode" prefHeight="50" prefWidth="80.0"/>
                      </children>
                   </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="359.0">
+                  <VBox  prefHeight="100.0" prefWidth="400.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="362.0" text="City">
+                        <Label  text="Country">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
+                        <TextField fx:id="country" prefHeight="50" prefWidth="80.0"/>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <Label  text="Supply Category">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="supplyCategory" prefHeight="50" prefWidth="80.0"/>
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutY="253.0" prefHeight="73.0" prefWidth="880.0" style="-fx-spacing: 60;">
+            <HBox alignment="CENTER_LEFT"   style="-fx-spacing: 60;">
                <children>
-                  <VBox prefHeight="100.0" prefWidth="359.0">
+
+                  <VBox  prefHeight="100.0" prefWidth="400.0">
                      <children>
-                        <Label prefHeight="30.0" prefWidth="360.0" text="Postal Code">
+                        <Label  text="Date Item Supplied">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField />
-                     </children>
-                  </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="359.0">
-                     <children>
-                        <Label prefHeight="30.0" prefWidth="362.0" text="Country">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField />
+                        <DatePicker prefHeight="50" prefWidth="400.0" promptText="select the date " fx:id="date" />
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutY="326.0" prefHeight="73.0" prefWidth="880.0" style="-fx-spacing: 60;">
+            <VBox  prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <VBox prefHeight="100.0" prefWidth="359.0">
-                     <children>
-                        <Label prefHeight="30.0" prefWidth="360.0" text="Supply Category">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField />
-                     </children>
-                  </VBox>
-                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="359.0">
-                     <children>
-                        <Label prefHeight="30.0" prefWidth="362.0" text="Date Item Supplied">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <DatePicker prefHeight="25.0" prefWidth="362.0" promptText="select the date " />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-            <VBox layoutX="46.0" layoutY="405.0" prefHeight="100.0" prefWidth="789.0">
-               <children>
-                  <Label prefHeight="30.0" prefWidth="360.0" text="Payment Term">
+                  <Label  text="Payment Term">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextArea prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea prefHeight="200.0" prefWidth="60.0" fx:id="paymentTerm"/>
                </children>
             </VBox>
-            <VBox layoutX="46.0" layoutY="528.0" prefHeight="100.0" prefWidth="789.0">
+            <VBox  prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <Label prefHeight="30.0" prefWidth="360.0" text="Website ">
+                  <Label  text="Website ">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextArea prefHeight="200.0" prefWidth="200.0" />
+                  <TextArea prefHeight="200.0" prefWidth="60.0" fx:id="website"/>
                </children>
             </VBox>
-            <Button layoutX="313.0" layoutY="640.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="217.0" text="Add Supplier " />
+            <HBox prefHeight="100.0" prefWidth="400.0" alignment="CENTER_RIGHT">
+               <Button mnemonicParsing="false" fx:id="button" prefHeight="52.0" prefWidth="217.0" text="Add Supplier " styleClass="btn" onAction="#addSupplier"/>
+            </HBox>
          </children>
-      </AnchorPane>
-   </content>
-</ScrollPane>
+      </VBox>
+   </ScrollPane>
+</AnchorPane>
