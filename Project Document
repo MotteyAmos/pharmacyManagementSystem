@@ -1,0 +1,77 @@
+ 
+DCIT308 GROUP PROJECT 
+
+Pharmacy Management System Project
+ 
+STUDENT NAMES	            STUDENT ID 
+ADJEI DANIEL JUNIOR 	    10970871 
+MOTTEY KOJO ABABIO AMOS 	10987142 
+TUTU MAWUFEMOR YAO JOHN  	10978644 
+ADZEWODA COURAGE  	      10962382 
+ABDUL-MAJEED AMINA 	      10965487 
+SANDO REBECCA LAMISI	    10948151
+DJIRACKOR RICHARD 	      10965604
+ 	 
+##Introduction 
+We were given the assignment to develop a pharmacy management system as our semester project. To develop the application, this project required the usage of a variety of data structures, including lists, LinkedLists, stacks, arrays, and queues. Additionally, certain objects needed to be found in the database and sorted alphabetically using the proper searching and sorting methods.
+Description
+Pharmacies can effectively manage their inventory and transactions thanks to the pharmacy management system that was designed for this project. The drug purchase history for each drug is viewable, along with specifics like the buyer, date, time, and quantity purchased. The system also can add substances and search for drugs. 
+The project not only provided practical experience in implementing data structures and algorithms but also aimed to enhance our skills in software development, teamwork, and project management.
+
+##Group Meeting Attendance 
+Attendance List for Group Meetings
+Date	      Time	    Meeting Agenda	                Members Present
+17-06-2024	10:00 AM 	Project Planning	              Amos, John, Amina, Courage, Daniel, Richard, Rebecca
+19-06-2024	12:00 PM	System Design Discussion	      Amos, John, Amina, Courage, Daniel, Richard, Rebecca
+21-06-2024	09:00 AM	Implementation Phase 1	        Amos, John, Amina, Courage, Daniel, Richard, Rebecca
+24-06-2024	12:00 PM	Implementation Phase 2	        Amos, John, Amina, Courage, Daniel, Richard, Rebecca
+28-06-2024	09:00 AM	Testing and Final Adjustments	  Amos, John, Amina, Courage, Daniel, Richard, Rebecca
+
+##Group Member Contributions  
+Contribution Report
+The group leader ensured that each member participated fully in the project. Below is the percentage contribution of each group member:
+Name: ABDUL-MAJEED AMINA
+Student ID: 10965487
+Role: Project Manager 
+Contribution: Coordinated meetings, managed timelines, and report writing.
+Contribution Percentage: 13%
+
+Name: MOTTEY KOJO ABABIO AMOS
+Student ID: 10987142
+Role: Led Developer
+Contribution: Led coding efforts, designed database schema
+Contribution Percentage: 20%
+
+Name: TUTU MAWUFEMOR YAO JOHN
+Student ID: 10978644
+Role: UI/UX Designer
+Contribution: Designed user interfaces and conducted user testing.
+Contribution Percentage: 15%
+
+Name: COURAGE ADZEWODA
+Student ID: 10962382
+Role: Quality Assurance
+Contribution: Tested functionalities and ensured bug fixing.
+Contribution Percentage: 13%
+
+Name: SANDO REBECCA LAMISI
+Student ID: 10948151
+Role: Documentation Specialist
+Contribution: Prepared project documentation and created a user manual.
+Contribution Percentage: 13%
+
+Name: ADJEI DANIEL JUNIOR
+Student ID: 10970871
+Role: Backend Developer
+Contribution: Developed backend functionalities, integrated database
+Contribution Percentage: 13%
+
+Name: DJIRACKOR RICHARD 
+Student ID: 10965604
+Role: Frontend Developer.
+Contribution: Developed frontend interfaces and implemented design.
+Contribution Percentage: 13% 
+
+Github Link: https://github.com/MotteyAmos/pharmacyManagementSystem
+
+It contain the attendance list of group meetings and correct names and ID of group members, contributions, contribution percentage and the role of each member.
